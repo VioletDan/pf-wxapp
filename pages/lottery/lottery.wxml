@@ -1,0 +1,41 @@
+<!-- 顶级view的class name默认article -->
+<view class="article index" style='height:{{articleHeight}}' catchtouchmove="true">
+  <!----section begin----->
+  <view class='section'>
+    <view class='eles'>
+      <view class='ele1 ani_bounce'></view>
+      <view class='ele2 ani_bounce2'></view>
+      <view class='ele3 ani_bounce3'></view>
+      <view class='ele4'></view>
+    </view>
+    <!-- prize -->
+    <section class="prize">
+      <view class='wheelbox'>
+        <view class='wheel2'></view>
+        <view class='light1 {{ani_light1}}'></view>
+        <view class='wheel1' style='transform:rotate({{rotate}}deg);transition:transform {{time}}s'></view>
+        <view class='btnbox' catchtap='lottery'>
+          <view class='btn1'></view>
+          <view class='btn2'></view>
+        </view>
+      </view>
+      <text class='list'>137****0141，抽到10元话费</text>
+      <text class='list'>137****0141，抽到10元话费</text>
+      <text class='list'>137****0141，抽到10元话费</text>
+      <text class='list'>137****0141，抽到10元话费</text>
+    </section>
+  </view>
+  <!----section end----->
+</view>
+<!----article end----->
+<!----iphoneX Bar----->
+<view id='iphoneXBar' wx:if="{{iphoneXBar}}"></view>
+<!----loadBox----->
+<view class="loadBox" id='loadBox' wx:if="{{loadBox}}">
+  <view class='span'>
+    <view wx:for='{{[0,0,0,0,0,0,0,0,0,0,0,0]}}' wx:key=""></view>
+  </view>
+</view>
+
+<!-- 引入文件 -->
+<import src="/pages/common/common.wxml" />

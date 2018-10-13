@@ -1,0 +1,38 @@
+<!--pages/upload/upload.wxml-->
+<!-- 顶级view的class name默认article -->
+<view class="article index" style='height:{{articleHeight}}' catchtouchmove="true">
+  <!----section begin----->
+  <image class='bg' src="../../images/bg.jpg"></image>
+  <scroll-view scroll-y class='content'>
+    <view class='cont-slide'>
+      <view class='upload1' wx:if="{{upload}}">
+        <image class='pic1' src="/images/upload/pic1.png"></image>
+        <view class='date'>*活动时间 2018年1月1日-6月30日</view>
+        <view class='h4'>人脸融合，专属卡面定制</view>
+        <image class='add' src="{{add_photo}}" catchtap='upload_pic'></image>
+        <image class='btn1' src="/images/upload/btn1.png" catchtap='uploadClick'></image>
+      </view>
+      <view class='upload2' wx:if="{{upload_suc}}">
+        <image class='pic2' src="/images/upload/pic2.png"></image>
+        <view class='txt' catchtap='resetClick'>重新上传</view>
+        <view class='txt2'>融合成功!</view>
+        <image class='btn1 btn2' src="/images/upload/btn2.png" catchtap='applClick'></image>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 底部 -->
+  <template is="footnav" data="{{tabArr}}"/>
+  <!----section end----->
+</view>
+<!----article end----->
+<!----iphoneX Bar----->
+<view id='iphoneXBar' wx:if="{{iphoneXBar}}"></view>
+<!----loadBox----->
+<view class="loadBox" id='loadBox' wx:if="{{loadBox}}">
+  <view class='span'>
+    <view wx:for='{{[0,0,0,0,0,0,0,0,0,0,0,0]}}' wx:key=""></view>
+  </view>
+</view>
+
+<!-- 引入文件 -->
+<import src="/pages/common/common.wxml" />

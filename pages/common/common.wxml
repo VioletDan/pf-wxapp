@@ -1,0 +1,19 @@
+<template name="footnav">
+  <view class='footnav'>
+    <view class='cont flex-center'>
+      <view class='item {{tabArr == "0" ? "active": ""}}' data-id='0' catchtap='toggleClick'>
+        <image src="../../images/icon-life.png" class='icon1'></image>
+        <text>生活</text>
+      </view>
+      <view class='item {{tabArr == "1" ? "active": ""}}' data-id='1' catchtap='toggleClick'>
+        <image src="../../images/icon-circle.png" class='mask'></image>
+        <image src="../../images/icon-parter.png" class='img icon2'></image>
+        <text>合伙人</text>
+      </view>
+      <view class='item {{tabArr == "2" ? "active": ""}}' data-id='2' catchtap='toggleClick'>
+        <image src="../../images/icon-member.png" class='icon3'></image>
+        <text>我的</text>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,55 @@
+<!--pages/member/member.wxml-->
+<!--pages/life/life.wxml-->
+<!-- 顶级view的class name默认article -->
+<view class="article index" style='height:{{articleHeight}}' catchtouchmove="true">
+  <!----section begin----->
+  <image class='bg' src="/images/bg.jpg"></image>
+  <scroll-view scroll-y class='content'>
+    <view class='cont-slide'>
+      <view class='box'>
+        <view class='info'>
+          <!-- 提示登录 -->
+          <view class='avtarbox avtarbox-user' wx:if="{{!hasUserInfo}}">
+            <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录/注册</button>
+          </view>
+          <view class='avtarbox' wx:if="{{hasUserInfo}}">
+            <image class='avtarbg' src="/images/member/avtar-bg.png"></image>
+            <image class='avtar' src="{{userInfo.avatarUrl}}"></image>
+            <text class='nickname'>{{userInfo.nickName}}</text>
+          </view>
+          <view class='signbox flex flex-column'>
+            <image class='isign' src="/images/member/sign.png"></image>
+            <text class='stxt'>签到有礼</text>
+          </view>
+        </view>
+        <view class='list flex flex-center flex-middle'>
+          <block wx:for="{{ListArr}}" wx:key="{{index}}">
+            <navigator class='list-item flex flex-column' hover-class="none" url="{{item.link}}">
+              <image class='icon' src="{{item.img}}"></image>
+              <text>{{item.text}}</text>
+            </navigator>
+          </block>
+        </view>
+      </view>
+      <navigator hover-class="none" url="/pages/upload/upload" class='banlink'>
+        <image class='ban' src="/images/member/pic.png"></image>
+      </navigator>
+    </view>
+  </scroll-view>
+  <!-- 底部 -->
+  <template is="footnav" data="{{tabArr}}"/>
+  <!----section end----->
+</view>
+<!----article end----->
+<!----iphoneX Bar----->
+<view id='iphoneXBar' wx:if="{{iphoneXBar}}"></view>
+<!----loadBox----->
+<view class="loadBox" id='loadBox' wx:if="{{loadBox}}">
+  <view class='span'>
+    <view wx:for='{{[0,0,0,0,0,0,0,0,0,0,0,0]}}' wx:key=""></view>
+  </view>
+</view>
+
+<!-- 引入文件 -->
+<import src="/pages/common/common.wxml" />
+

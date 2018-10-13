@@ -1,0 +1,32 @@
+<!----小程序自定义导航条 begin----->
+<view class='navigationBar' style='padding-top:{{navigationPadding}};'>
+    <view style='height:{{navigationHeight}};'>
+        <view class='back' catchtap='navigationBack'>
+            <view class='ic'></view>
+            <text>返回</text>
+        </view>
+        <text class='title'>{{title}}</text>
+    </view>
+</view>
+<!----小程序自定义导航条 end----->
+<!-- 顶级view的class name默认article -->
+<view class="article" style='height:{{articleHeight}}' catchtouchmove="true">
+    <!----section begin----->
+    <view class='section'>
+        
+    </view>
+    <!----section end----->
+    <!----bgm button----->
+    <view class='bgmBtn {{bgmPlay}}' catchtap='bgmClick' wx:if='{{bgmBtn}}'>
+        <image src='/images/common/bgm_on.png'></image>
+    </view>
+</view>
+<!----article end----->
+<!----iphoneX Bar----->
+<view id='iphoneXBar' wx:if="{{iphoneXBar}}"></view>
+<!----loadBox----->
+<view class="loadBox" id='loadBox' wx:if="{{loadBox}}">
+    <view class='span'>
+        <view wx:for='{{[0,0,0,0,0,0,0,0,0,0,0,0]}}' wx:key=""></view>
+    </view>
+</view>

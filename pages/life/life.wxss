@@ -1,0 +1,26 @@
+/* pages/life/life.wxss */
+/* 导航1 */
+.navList{width: 690rpx;height: 350rpx; background: #ffffff;border-radius: 10rpx;margin: 33rpx auto 40rpx; 
+flex-wrap: wrap;text-align: center;}
+.navList navigator{width: 20%;}
+.navList .icon{width: 78rpx;height: 67rpx;margin: 0 auto 12rpx;}
+.navList text{font-size: 24rpx;color: #333;}
+/* 中部menu */
+.menu-center{width: 690rpx;margin: 0 auto 40rpx;flex-wrap: wrap;}
+.menu-center navigator{width:50%;height: 160rpx;position: relative;}
+.menu-center navigator .mask{position: absolute;top: 0;left: 0;right: 0;bottom: 0;width:100%;height: 100%;}
+.menu-center navigator .icon{width: 110rpx;height: 110rpx;}
+.menu-center navigator .content{width: 100%;box-sizing: border-box;padding: 20rpx;}
+.menu-center navigator .content .icon{margin-right: 10rpx;}
+.menu-center navigator .content .h2{font-size: 26rpx;color: #333;}
+.menu-center navigator .content .h3{font-size: 22rpx;color: #666;margin-top: 20rpx;}
+/* 图片展示区 */
+.banner{width: 100%;margin: 0 auto;text-align: center;box-sizing: border-box;}
+.banner .banner-1{width:690rpx;height: 300rpx;margin: 0 auto 20rpx;}
+.none{display: none;}
+.banner .banner-swiper{padding-left: 30rpx;}
+.banner .banner-swiper swiper-item{width: 300rpx!important;height:auto!important;border-radius: 3rpx;padding-right: 20rpx;box-sizing: border-box;}
+.banner .banner-swiper swiper-item image{width: 100%;height: 129rpx;}
+.banner .banner-swiper swiper-item .txt{padding: 15rpx 0;background: #fff;border-radius: 5rpx;}
+.banner .banner-swiper swiper-item .h2{font-size: 26rpx;color: #333;}
+.banner .banner-swiper swiper-item .h3{font-size: 22rpx;color: #666;margin-top: 10rpx;}

@@ -1,0 +1,97 @@
+<!--pages/life/life.wxml-->
+<!-- 顶级view的class name默认article -->
+<view class="article index" style='height:{{articleHeight}}' catchtouchmove="true">
+  <!----section begin----->
+  <image class='bg' src="../../images/bg.jpg"></image>
+  <scroll-view scroll-y class='content'>
+    <!-- 导航1 -->
+    <view class='navList flex flex-center flex-middle'>
+      <block wx:for="{{navList}}" wx:key="{{index}}">
+        <navigator class='flex flex-column' hover-class="none" url="{{item.link}}">
+          <image class='icon' src="{{item.img}}"></image>
+          <text>{{item.text}}</text>
+        </navigator>
+      </block>
+    </view>
+    <!-- 中部menu -->
+    <view class='menu-center flex flex-center flex-middle'>
+      <navigator class='flex' hover-class="none">
+        <image class='mask' src="../../images/life/bg.png"></image>
+        <view class='content flex flex-row flex-center flex-middle'>
+          <image class='icon flex-item' src="../../images/life/item-1.png"></image>
+          <view class='flex-item-2 flex flex-column'>
+            <text class='h2'>账单分期</text>
+            <text class='h3'>积分赢好礼</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='flex' hover-class="none">
+        <image class='mask' src="../../images/life/bg.png"></image>
+        <view class='content flex flex-row flex-center flex-middle'>
+          <image class='icon flex-item' src="../../images/life/item-2.png"></image>
+          <view class='flex-item-2 flex flex-column'>
+            <text class='h2'>账单分期</text>
+            <text class='h3'>积分赢好礼</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='flex' hover-class="none">
+        <image class='mask' src="../../images/life/bg.png"></image>
+        <view class='content flex flex-row flex-center flex-middle'>
+          <image class='icon flex-item' src="../../images/life/item-3.png"></image>
+          <view class='flex-item-2 flex flex-column'>
+            <text class='h2'>账单分期</text>
+            <text class='h3'>积分赢好礼</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='flex' hover-class="none">
+        <image class='mask' src="../../images/life/bg.png"></image>
+        <view class='content flex flex-row flex-center flex-middle'>
+          <image class='icon flex-item' src="../../images/life/item-4.png"></image>
+          <view class='flex-item-2 flex flex-column'>
+            <text class='h2'>账单分期</text>
+            <text class='h3'>积分赢好礼</text>
+          </view>
+        </view>
+      </navigator>
+
+    </view>
+    <!-- 图片展示区 -->
+    <view class='banner'>
+      <image class='banner-1' src="../../images/life/pic1.png"></image>
+      <view class='banner-swiper'>
+        <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" 
+          interval="{{interval}}" 
+          duration="{{duration}}"
+          display-multiple-items="{{displayMmultipleItems}}" circular="true">
+          <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item class="flex flex-column">
+              <image src="{{item}}" class="slide-image"/>
+              <view class='txt flex flex-column flex-center flex-middle'>
+                <text class='h2'>霸王餐</text>
+                <text class='h3'>0元免费吃</text>
+              </view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 底部 -->
+  <template is="footnav" data="{{tabArr}}"/>
+  <!----section end----->
+</view>
+<!----article end----->
+<!----iphoneX Bar----->
+<view id='iphoneXBar' wx:if="{{iphoneXBar}}"></view>
+<!----loadBox----->
+<view class="loadBox" id='loadBox' wx:if="{{loadBox}}">
+  <view class='span'>
+    <view wx:for='{{[0,0,0,0,0,0,0,0,0,0,0,0]}}' wx:key=""></view>
+  </view>
+</view>
+
+<!-- 引入文件 -->
+<import src="/pages/common/common.wxml" />

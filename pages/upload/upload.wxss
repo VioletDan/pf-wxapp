@@ -1,0 +1,11 @@
+/* pages/upload/upload.wxss */
+.none{display: none;}
+.cont-slide .pic1{width: 750rpx;height: 484rpx;}
+.cont-slide .date{font-size: 22rpx;color: #0774ff;padding-left: 26rpx;}
+.cont-slide .h4{font-size: 30rpx;color: #0774ff;text-align: center;font-weight: 700;margin: 165rpx auto 25rpx;}
+.cont-slide .add{width: 400rpx;height: 400rpx;margin: 0 auto 53rpx;display: block;}
+.cont-slide .btn1{width: 750rpx;height: 169rpx;}
+.cont-slide .pic2{width: 750rpx;height: 573rpx;}
+.cont-slide .txt{font-size: 24rpx;color: #999;text-align: center;margin-top: -93rpx;}
+.cont-slide .txt2{font-size: 30rpx;color: #0774ff;text-align: center;margin-top: 80rpx;}
+.cont-slide .btn2{margin-top:98rpx;}

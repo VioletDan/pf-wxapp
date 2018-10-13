@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/life/life",
+    "pages/parter/parter",
+    "pages/member/member",
+    "pages/inpage/inpage",
+    "pages/upload/upload",
+    "pages/lottery/lottery"
+  ],
+  "window": {
+    "navigationStyle": "default",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1e8aff",
+    "navigationBarTitleText": "浦大喜奔",
+    "navigationBarTextStyle": "#fff"
+  }
+}

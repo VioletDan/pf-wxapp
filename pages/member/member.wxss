@@ -1,0 +1,21 @@
+/* pages/member/member.wxss */
+.cont-slide{padding-top: 52rpx;}
+.cont-slide .box{width: 690rpx;background: #fff;margin:0 auto;border-radius: 8rpx;box-shadow: rgba(4,37,94,.16) 0rpx 0rpx 20rpx 5rpx;}
+.cont-slide .box .info{text-align:right;padding:20rpx 0 26rpx;border-bottom:#ebebeb 2rpx solid;box-sizing: border-box;height: 153rpx;}
+.cont-slide .avtarbox{position: absolute;left:33rpx;top:-52rpx;width:164rpx;height: 164rpx;}
+.cont-slide .avtarbox-user{width: auto;height: auto; top: inherit;}
+.cont-slide .avtarbox-user button{font-size: 28rpx;background-color: #F8F8F8; }
+.cont-slide .avtarbox .avtarbg{width:100%;height: 100%;position: absolute;top: 0;left: 0;}
+.cont-slide .avtarbox .avtar{width: 130rpx;height: 130rpx;position: absolute;top: 16rpx;left: 16rpx;border-radius: 100%;}
+.cont-slide .avtarbox .nickname{font-size:26rpx;color:#333;padding-top:160rpx;display:block;text-align:center;}
+.cont-slide .signbox{position: absolute;top: 23rpx;right: 32rpx;text-align: center;}
+.cont-slide .signbox .isign{width: 61rpx;height: 60rpx;margin: 0 auto;}
+.cont-slide .signbox .stxt{font-size: 26rpx;color: #91b4ff;margin-top: 12rpx;}
+.cont-slide .list{flex-wrap: wrap;}
+.cont-slide .list .list-item{width: 33.3%;text-align: center;padding: 25rpx 0 50rpx;border-bottom:#ebebeb 2rpx solid;border-right:#ebebeb 2rpx solid;box-sizing:border-box;}
+.cont-slide .list .list-item:nth-child(3n+3){border-right: none;}
+.cont-slide .list .list-item:nth-last-child(1),.cont-slide .list .list-item:nth-last-child(2),.cont-slide .list .list-item:nth-last-child(3){border-bottom: none;}
+.cont-slide .list .list-item .icon{width: 90rpx;height: 90rpx;margin: 0 auto;}
+.cont-slide .list .list-item text{margin-top: 49rpx;font-size: 22rpx;}
+.cont-slide .banlink{text-align: center;margin-top: 50rpx;}
+.cont-slide .ban{width: 690rpx;height: 260rpx;margin: 0 auto;}

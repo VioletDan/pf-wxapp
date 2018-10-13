@@ -1,0 +1,37 @@
+<!-- 顶级view的class name默认article -->
+<view class="article index" style='height:{{articleHeight}}' catchtouchmove="true">
+  <!----section begin----->
+  <image class='bg' src="../../images/bg.jpg"></image>
+  <scroll-view scroll-y class='content'>
+    <image class='card' src="../../images/index/card.png"></image>
+    <view class='inner'>
+      <view class='date'>*活动时间 2018年1月1日-6月30日</view>
+      <view class='h4'>新手“合伙人”成长礼</view>
+      <view class='h5'>首推星钻奖</view>
+      <view class='txt1'>新注册成为浦发信用卡“合伙人”且在活动期间成功推荐1名新客户(含)以上，即可获得1颗梦享家俱乐部卡星( 同一证件号码限获赠1次)。</view>
+      <view class='h5'>促动动卡奖</view>
+      <view class='txt1'>活动期间，至少1名(含)以上被推荐的新客户在核卡30天内完成首次动卡，推荐人可获得5元刷卡金(活动期间，每位推荐人仅限获得1次)。</view>
+      <view class='h4'>新手“合伙人”成长礼</view>
+      <view class='h5'>首推星钻奖</view>
+      <view class='txt1'>新注册成为浦发信用卡“合伙人”且在活动期间成功推荐1名新客户(含)以上，即可获得1颗梦享家俱乐部卡星( 同一证件号码限获赠1次)。</view>
+      <view class='h5'>促动动卡奖</view>
+      <view class='txt1'>活动期间，至少1名(含)以上被推荐的新客户在核卡30天内完成首次动卡，推荐人可获得5元刷卡金(活动期间，每位推荐人仅限获得1次)。</view>
+    </view>
+    <image class='btn' src="../../images/index/btn.png"></image>
+  </scroll-view>
+  <!-- 底部 -->
+  <template is="footnav" data="{{tabArr}}"/>
+  <!----section end----->
+</view>
+<!----article end----->
+<!----iphoneX Bar----->
+<view id='iphoneXBar' wx:if="{{iphoneXBar}}"></view>
+<!----loadBox----->
+<view class="loadBox" id='loadBox' wx:if="{{loadBox}}">
+  <view class='span'>
+    <view wx:for='{{[0,0,0,0,0,0,0,0,0,0,0,0]}}' wx:key=""></view>
+  </view>
+</view>
+
+<!-- 引入文件 -->
+<import src="/pages/common/common.wxml" />
